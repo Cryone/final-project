@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Montserrat&family=Poppins:wght@100&display=swap');
+
+* {margin: 0; padding:0px;border: 0; -webkit-appearance: none;font-family: 'Montserrat', sans-serif; text-decoration: none; font-weight: 0; box-sizing: border-box;}
+html, body {overflow-x: hidden; width: 100vw; height: 100vh; overflow-y: scroll;}
+
+.page-container {grid-template-rows: 1fr 1fr 100px;}
+header {
+    background-image: linear-gradient(to right bottom, #c3c8d2, #a5b2cb, #98aed5, #7d9fd0, #3d72b4);
+    grid-template-rows: 120px 1fr;
+    
+}
+
+.nav-container {margin: 0 10%; align-items: center; border-bottom: 1px solid #00436d84;}
+.nav-items { list-style: none;}
+.nav-item a{text-decoration: none;color: white;}
+.nav-item a:hover {color:#3d72b4;}
+.logo{font-size: 25px;}
+
+.header-main {margin: 0 10%;}
+
+#header-img {height: 10%; border-radius: 25px 5px 25px 5px; padding-top: 35px;}
+.header-main-container{grid-template-rows: 80px 80px 60px 80px 50px;}
+.header-button-container{width: 200px; height: 50px;}
+#header-butt{background-image: linear-gradient(to right bottom, #c3c8d2, #a5b2cb, #98aed5, #7d9fd0, #3d72b4);border: solid 1px #c3c8d2; border-radius: 25px 5px 25px 5px; color: white;}
+#header-butt:active {background-image: linear-gradient(to left, #c3c8d2, #a5b2cb, #859cc3, #6487bc, #3d72b4);}
+.best-product {margin: 0 10%;grid-template-rows: 100px 1fr;}
+.best-product-container {grid-template-columns: 1fr 1fr 1fr; padding-top: 50px; }
+.best-product-container-box-alger{width: 300px; height: 380px;; background-image: url(../res/header-real-image2.jpg); background-size: cover;}
+.best-product-container-box-tipasa{width: 300px; height: 380px;; background-image: url(../res/header-real-image2.jpg); background-size: cover;}
+.best-product-container-box-boumerdes{width: 300px; height: 380px;; background-image: url(../res/header-real-image2.jpg); background-size: cover;}
