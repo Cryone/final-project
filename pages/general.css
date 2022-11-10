@@ -42,7 +42,7 @@
 /* définir les types de couleurs */
 .white {background-color: white;}  
 .black {background-color: black;}
-.blue {background-color:rgb(10, 18, 237);;}
+.blue {background-color: #3d72b4}
 .gray {background-color: rgb(247 247 247 / 89%);}
 .dark-gray {background-color: rgb(83, 83, 83);}
 .red {background-color: #FF5A5F;}
@@ -51,7 +51,7 @@
 /* Text colors */
 .text-white {color: white;}
 .text-black {color: black;}
-.text-blue {color: rgb(12, 26, 187);}
+.text-blue {color:#3d72b4;}
 .text-gray {color: rgb(133, 133, 133);}
 .text-red {color: rgb(239, 79, 79);}
 .bold {font-weight: bold;}

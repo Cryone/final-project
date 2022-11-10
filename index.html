@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./pages/nav.css">
     <link rel="stylesheet" href="./pages/main.css">
     <link rel="stylesheet" href="./pages/general.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +16,13 @@
 
         <header class="grid vw100 vh100">
                 <div class="nav-container flex space-between text-white p10">
-                    <div class="flex logo p10 pointer">real.<span class="bold" style="color:#3d72b4;">estate</span>
+                    <div class="flex logo p10 pointer">real.<span class="bold blue">estate</span>
                     </div>
                     <ul class="flex nav-items p10 gap50">
-                        <li class="nav-item p10 pointer"><a href="#">Home</a></li>
-                        <li class="nav-item p10 pointer"><a href="#">Services</a></li>
-                        <li class="nav-item p10 pointer"><a href="#">About</a></li>
-                        <li class="nav-item p10 pointer"><a href="#">Contact</a></li>
+                        <li class="nav-item p10 pointer"><a href="./index.html">HOME</a></li>
+                        <li class="nav-item p10 pointer"><a href="#">SERVICES</a></li>
+                        <li class="nav-item p10 pointer"><a href="#">ABOUT US</a></li>
+                        <li class="nav-item p10 pointer"><a href="./pages/contact.html" target="_blank">CONTACT</a></li>
                     </ul>
                 </div>   
                 <div class="flex space-between header-main p10">
@@ -35,7 +36,7 @@
                         </div>
                         
                         <div class="grid header-button-container p10 pointer">
-                            <button id="header-butt" class="p10">Découvrer nos produits</button>
+                            <button id="header-butt" class="p10"><a href="#best-product">Découvrer nos produits</a> </button>
                         </div>
                         <div class="grid median-text p10">                         
                             Nous priorisons toujours le résultat maximum possible avec des méthodes modernes
@@ -48,32 +49,36 @@
                 </div>
         </header>
 
-        <div class="grid best-product">
+        <div id="best-product" class="grid">
             <div class="grid p10 center very-big-text" style="color: #3d72b4; ">
-                NO PRODUITS <br style="width: 50px;border-bottom: 1px solid #00436d84;"> 
+                NOS PRODUITS <br style="width: 50px;border-bottom: 1px solid #00436d84;"> 
             </div>
+            <div class="grid line center"></div>
             <div class="grid best-product-container p10 center gap20">
-                    <div class="grid best-product-container-box-alger text-white center big-text">
+                    <div class="grid best-product-container-box-alger text-white center big-text pointer">
                         Alger
                     </div>
-                    <div class="grid best-product-container-box-boumerdes text-white center big-text">
+                    
+                    <div class="grid best-product-container-box-boumerdes text-white center big-text pointer">
                         Boumerdes
                     </div>
-                    <div class="grid best-product-container-box-tipasa text-white center big-text">
+                    <div class="grid best-product-container-box-tipasa text-white center big-text pointer">
                         Tipasa
                     </div>
-                    <div class="grid best-product-container-box-alger text-white center big-text">
+                    <div class="grid best-product-container-box-alger text-white center big-text pointer">
                         Alger
                     </div>
-                    <div class="grid best-product-container-box-boumerdes text-white center big-text">
+                    <div class="grid best-product-container-box-boumerdes text-white center big-text pointer">
                         Boumerdes
                     </div>
-                    <div class="grid best-product-container-box-tipasa text-white center big-text">
+                    <div class="grid best-product-container-box-tipasa text-white center big-text pointer">
                         Tipasa
                     </div>
             </div>
         </div>
-        <div class="footer"></div>
+        <div class="grid footer text-white center">
+            @DEV/Z
+        </div>
 
 
     </div>
