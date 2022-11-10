@@ -31,3 +31,28 @@ header {
 .best-product-container-box-alger{width: 300px; height: 380px;; background-image: url(../res/header-real-image2.jpg); background-size: cover;}
 .best-product-container-box-tipasa{width: 300px; height: 380px;; background-image: url(../res/header-real-image2.jpg); background-size: cover;}
 .best-product-container-box-boumerdes{width: 300px; height: 380px;; background-image: url(../res/header-real-image2.jpg); background-size: cover;}
+
+
+
+/* ********************IPHONE 12 PRO******************* */
+
+@media screen and (min-width : 0px) and (max-width : 850px) {
+    
+}
+
+/* *******************LARGE MONITORS******************** */
+
+@media screen and (min-width : 1024px) and (max-width : 1920px) {
+    .header-main {margin-top: 8%;}
+    #header-img {height: 13%; border-radius: 25px 5px 25px 5px; padding-top: 35px;}
+    .header-main-container{grid-template-rows: 80px 80px 80px 80px 50px;}
+    .header-main-container{margin: 50px 0 0 100px;}
+    .header-button-container{max-width: 250px; height: 60px;}
+   
+    
+    .best-product {margin: 5% 10%;grid-template-rows: 100px 1fr;}
+    .best-product-container-box-alger{width: 350px; }
+    .best-product-container-box-tipasa{width: 350px;}
+    .best-product-container-box-boumerdes{width: 350px;}
+
+}
