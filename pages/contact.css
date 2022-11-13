@@ -7,12 +7,14 @@
 html, body {overflow-x: hidden; width: 100vw; height: 100vh; overflow-y: scroll;}
 
 header {
-    background-image: linear-gradient(to right bottom, #c3c8d2, #a5b2cb, #98aed5, #7d9fd0, #3d72b4);
-    grid-template-rows: 220px 1fr;   
+    background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);
+    grid-template-rows: 80px 1fr 50px;  
 }
-.contact-container{grid-template-rows: 50px 1fr;width: 200px; margin: 0 10%;}
-.box-details {width: 100px;}
-.button-reset {background-color:linear-gradient(to right bottom, #c3c8d2, #a5b2cb, #98aed5, #7d9fd0, #3d72b4);border: none;}
+.contact-container{grid-template-rows: 50px 50px 1fr; margin: 2% 10%}
 
-.input-grid{grid-template-columns: 2fr 1fr; background-color:linear-gradient(to right bottom, #c3c8d2, #a5b2cb, #98aed5, #7d9fd0, #3d72b4);}
-.input-item {padding: 10px;background-color:linear-gradient(to right bottom, #c3c8d2, #a5b2cb, #98aed5, #7d9fd0, #3d72b4);}
+.box-details{grid-template-rows: 60px 60px 60px 1fr;}
+.button-reset {background-image: linear-gradient(to left top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);border: solid 1px #9ca6ba; color: white; width: 80px;}
+.button-reset:hover {background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);transition: transform .2s}
+
+.input-grid {grid-template-columns: 1fr 100px;width: 600px;}
+

@@ -4,54 +4,64 @@
     
     <link rel="stylesheet" href="./nav.css">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="./general.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realty Site | PFE</title>
+    <title>Realty Site | PFE/conctact</title>
 </head>
 <body>
 
         <header class="grid vw100 vh100" >
-                <div class="nav-container flex space-between text-white p10">
-                    <div class="flex logo p10 pointer">real.<span class="bold" style="color:#3d72b4;">estate</span>
-                    </div>
-                    <ul class="flex nav-items p10 gap50">
-                        <li class="nav-item p10 pointer"><a href="../index.html">HOME</a></li>
-                        <li class="nav-item p10 pointer"><a href="#">SERVICES</a></li>
-                        <li class="nav-item p10 pointer"><a href="#">ABOUT US</a></li>
-                        <li class="nav-item p10 pointer"><a href="./contact.html">CONTACT</a></li>
-                    </ul>
+            <div class="nav-container flex space-between text-white p10">
+                <div class="flex logo p10 pointer"><a href="../index.html">real.<span class="text-light-blue">estate</span></a>
                 </div>
-                <div class="grid bold contact-container">
-                    <div class="grid  text-blue big-text center">VOUS VOULEZ ORGANISER UN TOUR ?   
-                    </div>
-                    <div class="grid text-blue big-text center">CONTACTEZ NOUS  
-                    </div>
-                    <div class="grid p10 box-details">
-                        <form class="grid input-grid gap10">
-                            <input id="nom" type="text" class="input-item big-text text-blue" placeholder="Veuillez écrire votre nom complet">
-                            <button class="grid button-reset center text-white pointer"><span class="material-symbols-outlined">restart_alt</span>
-                            </button>
-                        </form>    
-                    </div>  
-                    <div class="grid p10 box-details">
-                        <form class="grid input-grid gap10">
-                            <input type="text" class="input-item big-text text-blue" placeholder="Veuillez écrire votre email"  class="input-item">  
-                            <button class="grid button-reset center text-white pointer "><span class="material-symbols-outlined">restart_alt</span>
-                            </button> 
-                        </form>
-                    </div>
-                    <div class="grid p10 box-details">
-                        <form class="grid input-grid gap10">
-                            <textarea placeholder="Entrez votre text ici" class="big-text text-blue"></textarea>
+                <ul class="flex nav-items p10 gap50">
+                    <li class="nav-item p10 pointer"><a href="../index.html">HOME</a></li>
+                    <li class="nav-item p10 pointer"><a href="#">SERVICES</a></li>
+                    <li class="nav-item p10 pointer"><a href="./about.html" target="_blank">ABOUT US</a></li>
+                    <li class="nav-item p10 pointer"><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div> 
+            <div class="grid contact-container center">
+                <div class="grid text-white big-text center">VOUS VOULEZ ORGANISER UN TOUR ? 
+                </div>
+                <div class="grid text-white big-text center">Contactez-nous ici
+                </div>
+                <div class="grid p10 box-details center w100">
+                    <form class="grid input-grid gap10">
+                        <input id="name" type="text" class="input-item text-blue p10" placeholder="Veuillez écrire votre nom complet">
+                        <button class=" button-reset center text-white pointer"><span class="material-symbols-outlined">restart_alt</span>
+                        </button>
+                    </form>    
+                    <form class="grid input-grid gap10">
+                        <input id="name" type="text" class="input-item text-blue p10" placeholder="Veuillez écrire votre email: email@gmail.com">
+                        <button class=" button-reset center text-white pointer"><span class="material-symbols-outlined">restart_alt</span>
+                        </button>
+                    </form>   
+                    <form class="grid input-grid gap10">
+                        <input id="name" type="text" class="input-item text-blue p10" placeholder="Ecrire l'objet de votre requête">
+                        <button class=" button-reset center text-white pointer"><span class="material-symbols-outlined">restart_alt</span>
+                        </button>
+                    </form>   
+                       
+                    <div class="grid p10">
+                        <form class="grid input-grid gap10 text-section">
+                            <textarea placeholder="Entrez votre text ici" class="text-blue p10"></textarea>
                             <button class="grid center button-reset text-white pointer">Envoyer
                             </button>
                         </form>
-                    </div>
-                </div> 
-            </header>   
+                    </div> 
+                </div>  
+
+            </div>
+            <div class="grid footer text-white center">
+                    @DEV/Z
+            </div>
+        </header>   
+        
 </body>
 <script src="https://kit.fontawesome.com/ddd97c639a.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>

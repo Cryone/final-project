@@ -8,15 +8,15 @@ html, body {overflow-x: hidden; width: 100vw; height: 100vh; overflow-y: scroll;
 
 .page-container {grid-template-rows: 1fr 1fr 100px;}
 header {
-    background-image: linear-gradient(to right bottom, #c3c8d2, #a5b2cb, #98aed5, #7d9fd0, #3d72b4);
+    background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);
     grid-template-rows: 120px 1fr;
-    
 }
 
 .nav-container {margin: 0 10%; align-items: center; border-bottom: 1px solid #00436d84;}
 .nav-items { list-style: none;}
+.logo a{text-decoration: none;color: white;}
 .nav-item a{text-decoration: none;color: white;}
-.nav-item a:hover {color:#3d72b4;}
+.nav-item a:hover {color:#c3c8d2; border-bottom: 1px solid #c3c8d2;}
 .logo{font-size: 25px;}
 
 .header-main {margin: 0 10%;}
@@ -24,10 +24,10 @@ header {
 #header-img {height: 10%; border-radius: 25px 5px 25px 5px; padding-top: 35px;}
 .header-main-container{grid-template-rows: 80px 80px 60px 80px 50px;}
 .header-button-container{max-width: 200px; height: 50px;}
-#header-butt{background-image: linear-gradient(to right bottom, #c3c8d2, #a5b2cb, #98aed5, #7d9fd0, #3d72b4);border: solid 1px #c3c8d2; border-radius: 25px 5px 25px 5px; color: white;}
+#header-butt{background-image: linear-gradient(to left top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);border: solid 1px #9ca6ba; border-radius: 25px 5px 25px 5px; color: white;}
 #header-butt:active {transform: scale(1.03);}
 button a {color: inherit;}
-#header-butt:hover{background-image: linear-gradient(to left, #c3c8d2, #a5b2cb, #859cc3, #6487bc, #3d72b4);transition: transform .2s}
+#header-butt:hover{background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);transition: transform .2s}
 #best-product {margin: 0 10%;grid-template-rows: 100px 20px 1fr;}
 .line {border-bottom: 1px solid #00436d84; margin: 0 10%;}
 .best-product-container {grid-template-columns: 1fr 1fr 1fr; margin-top: 40px; }
@@ -37,19 +37,34 @@ button a {color: inherit;}
 .best-product-container-box-tipasa:hover{transform: scale(1.03);}
 .best-product-container-box-boumerdes{width: 300px; height: 380px;; background-image: url(../res/header-real-image2.jpg); background-size: cover; transition: transform .2s}
 .best-product-container-box-boumerdes:hover{transform: scale(1.03);}
-.footer {position:relative; bottom: 0;background-image: linear-gradient(to right bottom, #c3c8d2, #a5b2cb, #98aed5, #7d9fd0, #3d72b4);}
+.footer {position:relative; bottom: 0;background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);}
 
 
 
 /* ********************IPHONE 12 PRO******************* */
 
 @media screen and (min-width : 0px) and (max-width : 850px) {
-    
+ .header-main-container{}   
 }
 
+/* *******************Normal MONITORS******************** */
+@media screen and (min-width : 850px) and (max-width : 1367px) {
+    .header-main {height: 100vh;}
+    #header-img {height: 60%; border-radius: 5px 5px 65px 5px; padding-top: 95px;}
+    .header-main-container{grid-template-rows: 80px 80px 80px 80px 50px;}
+    .header-main-container{margin: 50px 0 0 100px;}
+    .header-button-container{max-width: 250px; height: 60px;}
+   
+    
+    #best-product {margin: 5% 10%;grid-template-rows: 100px 1fr;}
+    .best-product-container-box-alger{width: 350px; }
+    .best-product-container-box-tipasa{width: 350px;}
+    .best-product-container-box-boumerdes{width: 350px;}
+
+}
 /* *******************LARGE MONITORS******************** */
 
-@media screen and (min-width : 1281px) and (max-width : 1920px) {
+@media screen and (min-width : 1368px) and (max-width : 1920px) {
     .header-main {margin-top: 8%; height: 100vh;}
     #header-img {height: 50%; border-radius: 25px 5px 25px 5px; padding-top: 35px;}
     .header-main-container{grid-template-rows: 80px 80px 80px 80px 50px;}
