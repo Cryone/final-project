@@ -20,15 +20,22 @@
                 </div>
                 <ul class="flex nav-items p10 gap50">
                     <li class="nav-item p10 pointer"><a href="../index.html">HOME</a></li>
-                    <li class="nav-item p10 pointer"><a href="#">SERVICES</a></li>
+                    <li class="nav-item p10 pointer list-services"><a href="#">SERVICES</a>
+                        <div class="grid list-services-items p10 center gap10 small-text">
+                            <a href="#" class="list-services-item pointer">Studios</a> 
+                            <a href="#" class="list-services-item pointer">F2</a> 
+                            <a href="#" class="list-services-item pointer">F3</a> 
+                            <a href="#" class="list-services-item pointer">F4</a> 
+                        </div>
+                    </li>
                     <li class="nav-item p10 pointer"><a href="./about.html" target="_blank">ABOUT US</a></li>
                     <li class="nav-item p10 pointer"><a href="./contact.html">CONTACT</a></li>
                 </ul>
             </div> 
             <div class="grid contact-container center">
-                <div class="grid text-white big-text center">VOUS VOULEZ ORGANISER UN TOUR ? 
+                <div class="grid text-white big-text center header-title">VOUS VOULEZ ORGANISER UN TOUR ? 
                 </div>
-                <div class="grid text-white big-text center">Contactez-nous ici
+                <div class="grid text-white big-text center header-title">Contactez-nous ici
                 </div>
                 <div class="grid p10 box-details center w100">
                     <form class="grid input-grid gap10">
@@ -50,20 +57,35 @@
                     <div class="grid p10">
                         <form class="grid input-grid gap10 text-section">
                             <textarea placeholder="Entrez votre text ici" class="text-blue p10"></textarea>
-                            <button class="grid center button-reset text-white pointer">Envoyer
+                            <button id="submit-butt" class="grid center button-reset text-white pointer">Envoyer
                             </button>
                         </form>
                     </div> 
+                    <div id="alert-box" class=" p10">
+                        <span id="exit-contact" class="material-symbols-outlined text-blue">
+                            close
+                            </span>
+                            <div class="p10 big-text text-blue text-center">
+                                Merci pour votre message <br><br><br>
+                                Un message vous sera envoyer dans les prochaines 24h
+                            </div>
+
+
+                    </div>
                 </div>  
+               
 
             </div>
             <div class="grid footer text-white center">
                     @DEV/Z
             </div>
+        <div class="overly vw100 vh100"></div>
         </header>   
+       
         
 </body>
 <script src="https://kit.fontawesome.com/ddd97c639a.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script src="./script.js"></script>
+<script src="./contact.js"></script>
 </html>

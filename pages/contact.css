@@ -17,4 +17,13 @@ header {
 .button-reset:hover {background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);transition: transform .2s}
 
 .input-grid {grid-template-columns: 1fr 100px;width: 600px;}
+#alert-box {background-color: white; height:300px;width: 600px;position: absolute;display: none!important}
+#alert-box p{padding-top: 50px; ;}
+#exit-contact {position: absolute; right: 0px; z-index: 200;}
+.overly {display: none!important; background-color: #5a657960; position: absolute; z-index: 100;}
 
+
+@media screen and (min-width : 1368px) and (max-width : 1920px) {
+    .header-title{margin-top: 10%;}
+   
+   }
