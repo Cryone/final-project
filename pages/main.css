@@ -9,7 +9,7 @@ html, body {overflow-x: hidden; width: 100vw; height: 100vh; overflow-y: scroll;
 .page-container {grid-template-rows: 1fr 1fr 100px;}
 header {
     background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);
-    grid-template-rows: 120px 1fr;
+    grid-template-rows: 60px 80px 1fr;
 }
 
 .nav-container {margin: 0 10%; align-items: center; border-bottom: 1px solid #00436d84;}
@@ -20,7 +20,8 @@ header {
 .nav-item a{text-decoration: none;color: white;}
 .nav-item a:hover {color:#c3c8d2; border-bottom: 1px solid #c3c8d2;}
 .logo{font-size: 25px;}
-
+.inner-nav {margin: 0 20%;}
+.inner-nave-items :last-child:hover {color:#c3c8d2; border-bottom: 1px solid #c3c8d2;}
 .header-main {margin: 0 10%;}
 
 #header-img {height: 10%; border-radius: 25px 5px 25px 5px; padding-top: 35px;}
