@@ -1,17 +1,21 @@
+var name =$('#name')
 
+function displayName ({
+    
 
+})
 $(document).on('click', '#submit-butt', function(){
 
  
-    $("#alert-box").css("display","grid","important")
-    $(".overly").css("display","grid","important")
+    $("#alert-box").fadeIn()
+    $(".overly").fadeIn()
 
-
+    return false;
 })
 
 $(document).on('click', '.overly, #exit-contact', function(){
 
-    $("#alert-box").css('display','grid')
+    $("#alert-box").fadeOut()
     $(".overly").fadeOut()
 
 

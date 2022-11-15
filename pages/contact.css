@@ -14,13 +14,13 @@ header {
 
 .box-details{grid-template-rows: 60px 60px 60px 1fr;}
 .button-reset {background-image: linear-gradient(to left top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);border: solid 1px #9ca6ba; color: white; width: 80px;}
-.button-reset:hover {background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);transition: transform .2s}
+.button-reset:hover {background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);}
 
 .input-grid {grid-template-columns: 1fr 100px;width: 600px;}
-#alert-box {background-color: white; height:300px;width: 600px;position: absolute;display: none!important}
+#alert-box {background-color: white; height:300px;width: 600px;position: absolute; display: none; z-index: 300;}
 #alert-box p{padding-top: 50px; ;}
 #exit-contact {position: absolute; right: 0px; z-index: 200;}
-.overly {display: none!important; background-color: #5a657960; position: absolute; z-index: 100;}
+.overly {display: none; background-color: #5a6579d2; position: absolute; z-index: 100;}
 
 
 @media screen and (min-width : 1368px) and (max-width : 1920px) {
