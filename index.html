@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <link rel="stylesheet" href="./pages/nav.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./pages/main.css">
     <link rel="stylesheet" href="./pages/general.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -13,7 +12,6 @@
 </head>
 <body>
     <div class="page-container grid vw100 vh100">
-
         <header class="grid vw100 vh100">
                 <div class="nav-container flex space-between text-white p10">
                     <div class="flex logo p10 pointer"><a href="./index.html">real.<span class="text-light-blue">estate</span></a>
@@ -22,10 +20,10 @@
                         <li class="nav-item p10 pointer"><a href="./index.html">HOME</a></li>
                         <li class="nav-item p10 pointer list-services "><a href="#">SERVICES</a>
                         <div class="list-services-items p10 small-text">
-                            <a href="#" class="list-services-item pointer">Studios</a> 
-                            <a href="#" class="list-services-item pointer">F2</a> 
-                            <a href="#" class="list-services-item pointer">F3</a> 
-                            <a href="#" class="list-services-item pointer">F4</a> 
+                            <a id="studio" class="list-services-item pointer">Studio</a> 
+                            <a id="f2" class="list-services-item pointer">F2</a> 
+                            <a id="f3" class="list-services-item pointer">F3</a> 
+                            <a id="f4" class="list-services-item pointer">F4</a> 
                         </div>
                         </li>
                         <li class="nav-item p10 pointer"><a href="./pages/about.html" target="_blank">ABOUT US</a></li>
@@ -87,6 +85,49 @@
                     </div>
 
                 </div>
+                <div class="product-container p10">
+                    <div class="header-details">
+                        <div class="grid p10 text-white very-big-text">
+                            Alger centre - Alger 
+                        </div>
+                        <div class=" text-white big-text p10"> 
+                            ✸ 120 commentaires, super hôte
+                        </div>
+                    </div>
+                    <div class="flex space-between">
+                        <div class="grid swiper">
+    
+                            <div class="swiper-wrapper">
+                               <div class="swiper-slide  "><img src="./res/product1.jpg" alt=""></div>
+                               <div class="swiper-slide  "><img src="./res/product2.jpg" alt=""></div>
+                               <div class="swiper-slide  "><img src="./res/product3.jpg" alt=""></div>
+                               <div class="swiper-slide  "><img src="./res/product2.jpg" alt=""></div>
+                               <div class="swiper-slide  "><img src="./res/product1.jpg" alt=""></div>
+                               <div class="swiper-slide  "><img src="./res/product3.jpg" alt=""></div>
+                           </div>
+                           <div class="swiper-pagination p10 center"></div>
+                       
+                           <div class="swiper-button-prev text-white  "></div>
+                           <div class="swiper-button-next text-white  "></div>
+                       
+                           <div class="swiper-scrollbar white center "></div>
+                       </div>
+                       <div class="grid pl30 side-text">
+                           <div class="grid p10 text-white  ">
+                               Vous voulez vérifier la disponibilité ? <a class="grid pointer text-white bold" href="../pages/contact.html">CLIQUEZ-ICI</a> 
+                           </div>
+                           <div class=" grid text-white p10 right"> 
+                               Prix : 5000da par nuit
+                           </div>
+                           <div class=" grid text-white p10 right"> 
+                            Les frais de services sont estimé à 1%
+                        </div>
+                        <div class=" grid text-white p10 right"> 
+                            Toutes nos réservations sont limitées
+                        </div>
+                       </div>
+                    </div>
+                </div>
         </header>
 
         <div id="best-product" class="grid">
@@ -95,37 +136,184 @@
             </div>
             <div class="grid line center"></div>
             <div class="grid best-product-container p10 center gap20">
-                    <div class="grid best-product-container-box-alger text-white center big-text pointer">
-                        Alger
-                    </div>
+                <a href="./pages/product.html" target="_blank">
+                    <div>
+                        <div class="grid best-product-container-box-alger text-white center big-text pointer">
                     
-                    <div class="grid best-product-container-box-boumerdes text-white center big-text pointer">
-                        Boumerdes
+                        </div>
+                        <div class="text-center">
+                            <div class=" text-black bold left pointer">Alger centre</div>
+                            <div class="text-gray left pointer">F2  </div>
+                            <div class="text-gray left pointer">24 février au 24 mars  </div>
+                            <div class="center text-black bold left pointer pt10">4000 dzd par nuit</div>
+                        </div>
                     </div>
-                    <div class="grid best-product-container-box-tipasa text-white center big-text pointer">
-                        Tipasa
+                </a>
+                <a href="./pages/product.html" target="_blank">
+                    <div>
+                        <div class="grid best-product-container-box-tizi-ouzou text-white center big-text pointer">
+                    
+                        </div>
+                        <div class="text-center">
+                            <div class=" text-black bold left pointer">Tizi Ouzou</div>
+                            <div class="text-gray left pointer">F2  </div>
+                            <div class="text-gray left pointer">24 février au 24 mars  </div>
+                            <div class="center text-black bold left pointer pt10">5500 dzd par nuit</div>
+                        </div>
                     </div>
-                    <div class="grid best-product-container-box-alger text-white center big-text pointer">
-                        Alger
+                </a>
+                <a href="./pages/product.html" target="_blank">
+                    <div>
+                        <div class="grid best-product-container-box-bejaia text-white center big-text pointer">
+                            
+                        </div>
+                        <div class="text-center">
+                            <div class=" text-black bold left pointer">Bejaïa</div>
+                            <div class="text-gray left pointer">F1  </div>
+                            <div class="text-gray left pointer">24 février au 24 mars  </div>
+                            <div class="center text-black bold left pointer pt10">6000 dzd par nuit</div>
+                        </div>
                     </div>
-                    <div class="grid best-product-container-box-boumerdes text-white center big-text pointer">
-                        Boumerdes
+                </a>
+                <a href="./pages/product.html" target="_blank">
+                    <div>
+                        <div class="grid best-product-container-box-boumerdes text-white center big-text pointer">
+                            
+                        </div>
+                        <div class="text-center">
+                            <div class=" text-black bold left pointer">Boumerdes</div>
+                            <div class="text-gray left pointer">F3  </div>
+                            <div class="text-gray left pointer">24 février au 24 mars  </div>
+                            <div class="center text-black bold left pointer pt10">2500 dzd par nuit</div>
+                        </div>
                     </div>
-                    <div class="grid best-product-container-box-tipasa text-white center big-text pointer">
-                        Tipasa
+                </a>
+                <a href="./pages/product.html" target="_blank">
+                    <div>
+                        <div class="grid best-product-container-box-tipasa text-black center big-text pointer">
+                            
+                        </div>
+                        <div class="text-center">
+                            <div class=" text-black bold left pointer">Tipasa</div>
+                            <div class="text-gray left pointer">Studio  </div>
+                            <div class="text-gray left pointer">24 février au 24 mars  </div>
+                            <div class="center text-black bold left pointer pt10">5000 dzd par nuit</div>
+                        </div>
                     </div>
-            </div>
-        </div>
-        <div class="grid footer text-white center">
-            @DEV/Z
+                </a>
+                <a href="./pages/product.html" target="_blank">
+                    <div>
+                        <div class="grid best-product-container-box-blida text-white center big-text pointer">
+                    
+                        </div>
+                        <div class="text-center">
+                            <div class=" text-black bold left pointer">Blida</div>
+                            <div class="text-gray left pointer">F2  </div>
+                            <div class="text-gray left pointer">24 février au 24 mars  </div>
+                            <div class="center text-black bold left pointer pt10">4000 dzd par nuit</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/product.html" target="_blank">
+                    <div>
+                        <div class="grid best-product-container-box-oran text-white center big-text pointer">
+                
+                        </div>
+                        <div class="text-center">
+                            <div class=" text-black bold left pointer">Oran</div>
+                            <div class="text-gray left pointer">F1  </div>
+                            <div class="text-gray left pointer">24 février au 24 mars  </div>
+                            <div class="center text-black bold left pointer pt10">7500 dzd par nuit</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/product.html" target="_blank">
+                    <div>
+                        <div class="grid best-product-container-box-annaba text-white center big-text pointer">
+                        
+                        </div>
+                        <div class="text-center">
+                            <div class=" text-black bold left pointer">Annaba</div>
+                            <div class="text-gray left pointer">F3  </div>
+                            <div class="text-gray left pointer">24 février au 24 mars  </div>
+                            <div class="center text-black bold left pointer pt10">8000 dzd par nuit</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/product.html" target="_blank">
+                    <div>
+                        <div class="grid best-product-container-box-alger text-white center big-text pointer">
+                    
+                        </div>
+                        <div class="text-center">
+                            <div class=" text-black bold left pointer">Mostaganem</div>
+                            <div class="text-gray left pointer">F1  </div>
+                            <div class="text-gray left pointer">24 février au 24 mars  </div>
+                            <div class="center text-black bold left pointer pt10">2500 dzd par nuit</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/product.html" target="_blank">
+                    <div>
+                        <div class="grid best-product-container-box-ouargla text-white center big-text pointer">
+                    
+                        </div>
+                        <div class="text-center">
+                            <div class=" text-black bold left pointer">Ouargla</div>
+                            <div class="text-gray left pointer">F3  </div>
+                            <div class="text-gray left pointer">24 février au 24 mars  </div>
+                            <div class="center text-black bold left pointer pt10">3000 dzd par nuit</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="./pages/product.html" target="_blank">
+                    <div>
+                        <div class="grid best-product-container-box-tammanrasset text-white center big-text pointer">
+                        
+                        </div>
+                        <div class="text-center">
+                            <div class=" text-black bold left pointer">Tamanrasset</div>
+                            <div class="text-gray left pointer">F4  </div>
+                            <div class="text-gray left pointer">24 février au 24 mars  </div>
+                            <div class="center text-black bold left pointer pt10">8000 dzd par nuit</div>
+                        </div>
+                    </div>
+                </a>
+              
+                <a href="./pages/product.html" target="_blank">
+                    <div class="grid best-product-container-box-illizi text-white center big-text pointer">
+                    </div>
+                        <div class="text-center" >
+                                <div class=" text-black bold left pointer">Illizi</div>
+                                <div class="text-gray left pointer">F2  </div>
+                                <div class="text-gray left pointer">24 février au 24 mars  </div>
+                                <div class="center text-black bold left pointer pt10">5000 dzd par nuit</div> 
+                        </div>
+                </a>
+                </div>
+
+                    
+           
         </div>
 
+        <div class="footer text-white center p10">
+            <footer class="flex space-between  footer-container">
+                <div class="flex logo p10 pointer"><a href="./index.html">real.<span class="text-light-blue">estate</span></a>
+                </div>
+                <div class="p10">Site de location immoblière <br>@2022 all rights reserved</div>
 
+                <div class="p10"><a href="./pages/contact.html" target="_blank" class="text-white nav-item pointer">CONTACT</a> </div>
+            </footer>
+
+            
+        </div>
     </div>
        
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 <script src="https://kit.fontawesome.com/ddd97c639a.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./pages/script.js"></script>
+<script src="./pages/contact.js"></script>
 </html>

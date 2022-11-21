@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Montserrat&family=Poppins:wght@100&display=swap');
+
+* {margin: 0; padding:0px;border: 0; -webkit-appearance: none;font-family: 'Montserrat', sans-serif; text-decoration: none; font-weight: 0; box-sizing: border-box;}
+html, body {overflow-x: hidden; width: 100vw; height: 100vh; overflow-y: scroll;}
+
+header {
+    background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);
+    grid-template-rows: 60px 80px 1fr;
+}
+.nav-container {margin: 0 10%; align-items: center; border-bottom: 1px solid #00436d84;}
+.nav-items { list-style: none; position: relative; }
+.list-services:hover .list-services-items{display:flex!important; gap: 10px;}
+.list-services-items {position: absolute; display: none!important; }
+.logo a{text-decoration: none;color: white;}
+.nav-item a{text-decoration: none;color: white;}
+.nav-item a:hover {color:#c3c8d2; border-bottom: 1px solid #c3c8d2;}
+.logo{font-size: 25px;}
+
+/* .product-container {margin: 0 10%}
+
+.product-gallery{ grid-template-columns: 1fr 0.5fr 0.5fr; }
+.product-gallery-container{background-size: cover; grid-template-columns: 1fr 1fr;width: 450px; height: 380px;}
+
+.img1{width: 450px; height: 380px; background-image: url(../res/product_1.jpg); background-size: cover; transition: transform .2s; border-radius: 5%;}
+.img1:hover{transform: scale(1.03);}
+.img2{width: 225px; height: 190px;; background-image: url(../res/product_2.jpg); background-size: cover; transition: transform .2s; border-radius: 5%;}
+.img2:hover{transform: scale(1.03);}
+.img3{width: 225px; height: 190px;; background-image: url(../res/product_3.jpg); background-size: cover; transition: transform .2s; border-radius: 5%;}
+.img3:hover{transform: scale(1.03);}
+/*  */ 
+.product-container{margin: 2% 10%; justify-content: left;}
+.swiper {width: 600px; height: 400px; background-size: cover; border-radius: 2%; }
+.swiper-slide{background: #ccc;}
+.swiper-slide img{object-fit: cover; width: 100%;}
+
+.footer{height: 100px;}
+
+@media screen and (min-width : 1368px) and (max-width : 1920px) {
+    .swiper {width: 800px; height: 550px;}
+    .side-text{font-size: 28px;}
+}
