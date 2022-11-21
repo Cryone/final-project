@@ -21,7 +21,7 @@ header {
 .nav-item a:hover {color:#c3c8d2; border-bottom: 1px solid #c3c8d2;}
 .logo{font-size: 25px;}
 .inner-nav {margin: 0 20%;}
-.inner-nave-items :last-child:hover {color:#c3c8d2; border-bottom: 1px solid #c3c8d2;}
+.inner-nav-items :last-child:hover {color:#c3c8d2; border-bottom: 1px solid #c3c8d2;}
 .product-container{margin: 2% 10%; justify-content: left; display: none;}
 .swiper {width: 600px; height: 400px; background-size: cover; border-radius: 2%; }
 .swiper-slide{background: #ccc;}
@@ -38,37 +38,10 @@ button a {color: inherit;}
 #best-product {margin: 0 10%;grid-template-rows: 100px 20px 1fr;}
 .line {border-bottom: 1px solid #00436d84; margin: 0 10%;}
 .best-product-container {grid-template-columns: 1fr 1fr 1fr; margin-top: 40px; }
-.best-product-container-box-alger{width: 300px; height: 380px; background-image: url(../res/1.jpg); background-size: cover;transition: transform .2s}
-.best-product-container-box-alger:hover{transform: scale(1.03);}
-.best-product-container-box-tipasa{width: 300px; height: 380px;; background-image: url(../res/3.jpg); background-size: cover;transition: transform .2s}
-.best-product-container-box-tipasa:hover{transform: scale(1.03);}
-.best-product-container-box-boumerdes{width: 300px; height: 380px;; background-image: url(../res/4.jpg); background-size: cover; transition: transform .2s}
-.best-product-container-box-boumerdes:hover{transform: scale(1.03);}
+.best-product-container-box{width: 300px; height: 380px;; background-size: cover;transition: transform .2s;overflow: hidden;}
+.best-product-container-box img{width: 300px;}
+.best-product-container-box:hover{transform: scale(1.03);}
 
-.best-product-container-box-blida{width: 300px; height: 380px;; background-image: url(../res/5.jpg); background-size: cover; transition: transform .2s}
-.best-product-container-box-blida:hover{transform: scale(1.03);}
- 
-.best-product-container-box-oran{width: 300px; height: 380px;; background-image: url(../res/2.jpg); background-size: cover; transition: transform .2s}
-.best-product-container-box-oran:hover{transform: scale(1.03);}
- 
-.best-product-container-box-annaba{width: 300px; height: 380px;; background-image: url(../res/6.jpg); background-size: cover; transition: transform .2s}
-.best-product-container-box-annaba:hover{transform: scale(1.03);}
- 
-.best-product-container-box-tizi-ouzou{width: 300px; height: 380px;; background-image: url(../res/7.jpg); background-size: cover; transition: transform .2s}
-.best-product-container-box-tizi-ouzou:hover{transform: scale(1.03);}
- 
-.best-product-container-box-bejaia{width: 300px; height: 380px;; background-image: url(../res/4.jpg); background-size: cover; transition: transform .2s}
-.best-product-container-box-bejaia:hover{transform: scale(1.03);}
- 
-.best-product-container-box-ouargla{width: 300px; height: 380px;; background-image: url(../res/3.jpg); background-size: cover; transition: transform .2s}
-.best-product-container-box-ouargla:hover{transform: scale(1.03);}
- 
-.best-product-container-box-illizi{width: 300px; height: 380px;; background-image: url(../res/6.jpg); background-size: cover; transition: transform .2s}
-.best-product-container-box-illizi:hover{transform: scale(1.03);}
- 
-.best-product-container-box-tammanrasset{width: 300px; height: 380px;; background-image: url(../res/7.jpg); background-size: cover; transition: transform .2s}
-.best-product-container-box-tammanrasset:hover{transform: scale(1.03);}
- 
 
 
 .footer {position:relative; bottom: 0;background: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);}
@@ -88,13 +61,11 @@ button a {color: inherit;}
     .header-main-container{grid-template-rows: 80px 80px 80px 80px 50px;}
     .header-main-container{margin: 50px 0 0 100px;}
     .header-button-container{max-width: 250px; height: 60px;}
-   
-    
-    #best-product {margin: 5% 10%;grid-template-rows: 100px 1fr;}
+    #best-product {margin: 5% 10%;grid-template-rows: 100px 1fr;z-index: 200;}
     .best-product-container-box-alger{width: 350px; }
     .best-product-container-box-tipasa{width: 350px;}
     .best-product-container-box-boumerdes{width: 350px;}
-
+    
 }
 /* *******************LARGE MONITORS******************** */
 
@@ -104,13 +75,11 @@ button a {color: inherit;}
     .header-main-container{grid-template-rows: 80px 80px 80px 80px 50px;}
     .header-main-container{margin: 50px 0 0 100px;}
     .header-button-container{max-width: 250px; height: 60px;}
-   
     
     #best-product {margin: 5% 10%;grid-template-rows: 100px 1fr;}
     .best-product-container-box-alger{width: 350px; }
     .best-product-container-box-tipasa{width: 350px;}
     .best-product-container-box-boumerdes{width: 350px;}
-
     .swiper {width: 800px; height: 550px;}
     .side-text{font-size: 28px;}
 
