@@ -26,8 +26,28 @@ html, body {overflow-x: hidden; width: 100vw; height: 100vh; overflow-y: scroll;
     shape-outside: url(../res/about_img2.jpg); 
 }
 
-.footer-about {position: relative; bottom: 0; background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);}
-
+@media screen and (min-width : 0px) and (max-width : 850px) {
+    .upper-nav{display: none!important;}   
+    .inner-nav{display: none!important;} 
+    .nav-mobile{display: flex; justify-content: space-between; z-index: 200;}
+    #exit{display: none;}
+    #exit{padding: 10px 10px 0 0 }
+    .nav-items{display: none; position: absolute; margin: 35%;gap: 10px!important;}
+    .about-section{margin: 0}
+    .about-img{
+        width: 150px;
+        height: 250px;
+    
+        background: url(../res/about_img2.jpg);
+        background-size: cover;
+        margin: 30px;
+        float: right;
+        shape-margin: 10px;
+        shape-outside: url(../res/about_img2.jpg); 
+    }
+    .footer {position:relative; bottom: 0;height: 160px; margin-top: 50px;}
+    .footer-container{margin: 0; font-size: 15px; text-align: left; display: grid!important;}
+}
 @media screen and (min-width : 1368px) and (max-width : 1920px) {
  .about-container{position: absolute; width: 100vw; height: 100vh;}
  .about-section p{line-height: 25px;}

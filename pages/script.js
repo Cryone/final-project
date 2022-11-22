@@ -4,21 +4,41 @@ $ (document).ready (function () {
     display_tags ()
 
 })
+
+
 // ***************************************
 // ******************************************
-// SWIPER GALLERY PHOTOS
- 
+// ON CLICK HAMBURGER
+$(document).on('click', '#hamburger', function(){
+    $(".overly").css('display','grid')
+    $("#exit").css('display','grid')
+    $(".nav-items").css('display','grid')
+    $("#hamburger").css('display','none')
+    
+
+
+});
+
+$(document).on('click', '#exit, .overly', function(){
+    $(".overly").css('display','none')
+    $("#exit").css('display','none')
+    $(".nav-items").css('display','none')
+    $("#hamburger").css('display','grid')
+
+    return false
+});
 
 
 // ***************************************
 // ******************************************
 // ON CLICK TO PRODUCT PAGE === SINGLE PAGE WITH INDEX.HTML
-$(document).on('click', '#studio', function(){
+$(document).on('click', '.studio', function(){
     $(".product-container").css('display','grid')
     displayStudio()    
-    $(".inner-nav").css('display','none')
-    $(".header-main").css('display','none')
-    $("#best-product").css('display','none')
+    $(".header-main").fadeOut()
+    $("#best-product").fadeOut()
+    $(".nav-mobile").css('display','none')
+    $(".overly").css('display','none')
     $(".footer").css('height','100px')
     new Swiper('.swiper', {
         // Optional parameters
@@ -42,29 +62,86 @@ $(document).on('click', '#studio', function(){
 })
 
 
-$(document).on('click', '#f2', function(){
+$(document).on('click', '.f2', function(){
     $(".product-container").css('display','grid')
     displayF2()
    
     $(".header-main").fadeOut()
     $("#best-product").fadeOut()
+    $(".nav-mobile").css('display','none')
+    $(".overly").css('display','none')
     $(".footer").css('height','100px')
+    new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        },
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        // And if we need scrollbar
+        scrollbar: {
+        el: '.swiper-scrollbar',
+        },
+    });
 
  })
-$(document).on('click', '#f3', function(){
+$(document).on('click', '.f3', function(){
     $(".product-container").css('display','grid')
     displayF3()
     $(".header-main").fadeOut()
     $("#best-product").fadeOut()
+    $(".nav-mobile").css('display','none')
+    $(".overly").css('display','none')
     $(".footer").css('height','100px')
+    new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        },
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        // And if we need scrollbar
+        scrollbar: {
+        el: '.swiper-scrollbar',
+        },
+    });
  })
-$(document).on('click', '#f4', function(){
+$(document).on('click', '.f4', function(){
     $(".product-container").css('display','grid')
     displayF4()
 
     $(".header-main").fadeOut()
     $("#best-product").fadeOut()
+    $(".nav-mobile").css('display','none')
+    $(".overly").css('display','none')
     $(".footer").css('height','100px')
+    new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        },
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        // And if we need scrollbar
+        scrollbar: {
+        el: '.swiper-scrollbar',
+        },
+    });
  })
 
 function displayStudio (){
@@ -265,17 +342,31 @@ function displayF4 (){
 // TAGS FITLERS
 var products=[
     {"location":"Alger", "location_detail":"F2","location_dates":"14 février - 5 mars","price":"5000","tags":["1","2"],"img":"1"},
-    {"location":"Tipasa", "location_detail":"F2","location_dates":"14 janvier - 20 avril","price":"5000","tags":["1","2","5"], "img":"2"},
-    {"location":"Oran", "location_detail":"F2","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["1","2","3"], "img":"3"},
-    {"location":"Annaba", "location_detail":"F2","location_dates":"14 février - 5 mars","price":"5000","tags":["1","2","3"], "img":"4"},
-    {"location":"Mostaganem", "location_detail":"F2","location_dates":"14 février - 5 mars","price":"5000","tags":["1","2","4","5"], "img":"2"},
-    {"location":"ouargla", "location_detail":"F2","location_dates":"14 janvier - 20 avril","price":"5000","tags":["4","2"], "img":"6"},
+
+
+    {"location":"Tipasa", "location_detail":"F3","location_dates":"14 janvier - 20 avril","price":"5000","tags":["1","2","5"], "img":"2"},
+
+
+    {"location":"Oran", "location_detail":"F4","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["1","2","3"], "img":"3"},
+
+
+    {"location":"Annaba", "location_detail":"studio","location_dates":"14 février - 5 mars","price":"5000","tags":["1","2","3"], "img":"4"},
+
+
+    {"location":"Mostaganem", "location_detail":"F4","location_dates":"14 février - 5 mars","price":"5000","tags":["1","2","4","5"], "img":"2"},
+
+
+    {"location":"ouargla", "location_detail":"F3","location_dates":"14 janvier - 20 avril","price":"5000","tags":["4","2"], "img":"6"},
+
+
     {"location":"Tamanrasset", "location_detail":"F2","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["4","2","3"], "img":"7"},
-    {"location":"Illizi", "location_detail":"F2","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["1","2"], "img":"3"},
-    {"location":"boumerdes", "location_detail":"F2","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["1","2","5"], "img":"4"},
+
+
+    {"location":"Illizi", "location_detail":"studio","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["1","2"], "img":"3"},
+
+    {"location":"boumerdes", "location_detail":"studio","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["1","2","5"], "img":"4"},
+
     {"location":"Blida", "location_detail":"F2","location_dates":"14 février - 5 mars","price":"5000","tags":["1","2","3"], "img":"3"},
-
-
 ]
 
 var tags=[

@@ -11,8 +11,10 @@ header {
     background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);
     grid-template-rows: 60px 80px 1fr;
 }
+.overly{display: none; background:linear-gradient(to left top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);}
+.nav-mobile {display: none;}
 
-.nav-container {margin: 0 10%; align-items: center; border-bottom: 1px solid #00436d84;}
+.upper-nav {margin: 0 10%; align-items: center; border-bottom: 1px solid #00436d84;}
 .nav-items { list-style: none; position: relative; }
 .list-services:hover .list-services-items{display:flex; gap: 10px;}
 .list-services-items {position: absolute; display: none; }
@@ -29,7 +31,7 @@ header {
 .header-main {margin: 0 10%;}
 
 #header-img {height: 10%; border-radius: 25px 5px 25px 5px; padding-top: 35px;}
-.header-main-container{grid-template-rows: 80px 80px 60px 80px 50px;}
+.header-main-container{grid-template: 80px 80px 60px 80px 50px / 1fr;}
 .header-button-container{max-width: 200px; height: 50px;}
 #header-butt{background-image: linear-gradient(to left top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);border: solid 1px #9ca6ba; border-radius: 25px 5px 25px 5px; color: white;}
 #header-butt:active {transform: scale(1.03);}
@@ -38,6 +40,7 @@ button a {color: inherit;}
 #best-product {margin: 0 10%;grid-template-rows: 100px 20px 1fr;}
 .line {border-bottom: 1px solid #00436d84; margin: 0 10%;}
 .best-product-container {grid-template-columns: 1fr 1fr 1fr; margin-top: 40px; }
+#best-product-header{}
 .best-product-container-box{width: 300px; height: 380px;; background-size: cover;transition: transform .2s;overflow: hidden;}
 .best-product-container-box img{width: 300px;}
 .best-product-container-box:hover{transform: scale(1.03);}
@@ -51,21 +54,43 @@ button a {color: inherit;}
 /* ********************IPHONE 12 PRO******************* */
 
 @media screen and (min-width : 0px) and (max-width : 850px) {
- .header-main-container{}   
+    .upper-nav{display: none!important;}   
+    .inner-nav{display: none!important;} 
+    .nav-mobile{display: flex; justify-content: space-between; z-index: 100;}
+    #exit{display: none;}
+    #exit{padding: 10px 10px 0 0 }
+    .nav-items{display: none; position: absolute; margin: 35%;gap: 10px!important;}
+    .header-main{display: grid!important; gap: 30px;margin: 0;align-items: center;}
+    #header-img{display: none;}
+    #header-butt:active {background-image: linear-gradient(to right top, #c3c8d2, #9ca6ba, #7585a3, #4e668c, #234876);transition: transform .2s}
+
+    .header-main-container{gap: 30px;grid-template: 120px 100px 60px 80px 50px / 1fr;}
+    #best-product{width: 100vw; margin: 0;}
+    #best-product-header{width: 100vw;padding: 0;}
+    .best-product-container{display: flex!important;overflow-x: scroll!important;width: 100vw;margin-left: 10%; gap: 50px!important;}
+    .best-product-container:-webkit-scrollbar {width: 30;}
+    .line{width: 315px;}
+    .product-container{margin: 0; text-align: center;justify-content: left;}
+    .header-titles{text-align: center;}
+    .swiper {width: 480px; height: 200px; background-size: cover; border-radius: 2%; }
+    .swiper-slide img{width: 100%;}
+    .footer {position:relative; bottom: 0;height: 160px; margin-top: 50px;}
+    .footer-container{margin: 0; font-size: 15px; text-align: left; display: grid!important;}
 }
 
 /* *******************Normal MONITORS******************** */
 @media screen and (min-width : 850px) and (max-width : 1367px) {
     .header-main {height: 100vh;}
     #header-img {height: 60%; border-radius: 5px 5px 65px 5px; padding-top: 95px;}
-    .header-main-container{grid-template-rows: 80px 80px 80px 80px 50px;}
+    .header-main-container{grid-template-rows: 120px 80px 80px 80px 50px;}
     .header-main-container{margin: 50px 0 0 100px;}
     .header-button-container{max-width: 250px; height: 60px;}
     #best-product {margin: 5% 10%;grid-template-rows: 100px 1fr;z-index: 200;}
     .best-product-container-box-alger{width: 350px; }
     .best-product-container-box-tipasa{width: 350px;}
     .best-product-container-box-boumerdes{width: 350px;}
-    
+    .product-container {margin-top: 0;}
+    .swiper {width: 500px; height: 300px;  }
 }
 /* *******************LARGE MONITORS******************** */
 
@@ -82,5 +107,4 @@ button a {color: inherit;}
     .best-product-container-box-boumerdes{width: 350px;}
     .swiper {width: 800px; height: 550px;}
     .side-text{font-size: 28px;}
-
 }
