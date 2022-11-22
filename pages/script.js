@@ -39,6 +39,7 @@ $(document).on('click', '.studio', function(){
     $("#best-product").fadeOut()
     $(".nav-mobile").css('display','none')
     $(".overly").css('display','none')
+    
     $(".footer").css('height','100px')
     new Swiper('.swiper', {
         // Optional parameters

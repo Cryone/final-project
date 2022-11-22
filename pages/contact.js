@@ -8,6 +8,7 @@ $(document).on('click', '#hamburger', function(){
     $("#exit").css('display','grid')
     $(".nav-items").css('display','grid')
     $("#hamburger").css('display','none')
+    $("#alert-box").fadeOut()
 });
 $(document).on('click', '#exit, .overly', function(){
     $(".overly").css('display','none')

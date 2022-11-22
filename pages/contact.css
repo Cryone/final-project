@@ -33,7 +33,8 @@ header {
     .contact-container{margin: 0;grid-template-rows: 100px 50px 1fr; gap: 20px;}
     .header-title{text-align: center;width: 80%; margin-top: 30%;}
     .input-grid {width: 380px;}
-    
+    #alert-box {height:250px;width: 320px;justify-content: center;}
+    #alert-box p{padding-top: 50px;}
     .footer {position:relative; bottom: 0;height: 160px; margin-top: 50px;}
     .footer-container{margin: 0; font-size: 15px; text-align: left; display: grid!important;}
 }
