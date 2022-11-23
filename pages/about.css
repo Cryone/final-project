@@ -18,29 +18,34 @@ html, body {overflow-x: hidden; width: 100vw; height: 100vh; overflow-y: scroll;
     width: 380px;
     height: 380px;
 
-    background: url(../res/about_img2.jpg);
+    background: url(../res/about_img.jpg);
     background-size: cover;
     margin: 30px;
     float: right;
     shape-margin: 10px;
-    shape-outside: url(../res/about_img2.jpg); 
+    shape-outside: url(../res/about_img.jpg); 
 }
 
 @media screen and (min-width : 0px) and (max-width : 850px) {
     .upper-nav{display: none!important;}   
     .inner-nav{display: none!important;} 
-    .nav-mobile{display: flex; justify-content: space-between; z-index: 200;}
+    .nav-mobile{display: flex; justify-content: space-between; }
+    .about-container {grid-template-rows: 80px 1fr;}
     #exit{display: none;}
     #exit{padding: 10px 10px 0 0 }
     .nav-items{display: none; position: absolute; margin: 35%;gap: 10px!important;}
-    .about-section{margin: 0}
+    .about-section{margin: 0;}
     .about-img{
         width: 180px;
         height: 250px;
-        z-index: 400!important;
-        margin: 30px!important;
+        margin: 15px;
         float: right;
-        shape-margin: 10px!important;
+        shape-margin: 10px;
+        background: url(../res/about_img.jpg);
+        background-size: cover;
+        shape-margin: 30px;
+        shape-outside: url(../res/about_img.jpg); 
+        
     }
     .footer {position:relative; bottom: 0;height: 160px; margin-top: 50px;}
     .footer-container{margin: 0; font-size: 15px; text-align: left; display: grid!important;}

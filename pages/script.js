@@ -12,19 +12,15 @@ $ (document).ready (function () {
 $(document).on('click', '#hamburger', function(){
     $(".overly").css('display','grid')
     $("#exit").css('display','grid')
-    $(".nav-items").css('display','grid')
+    $(".nav-item-mobile").css('display','grid')
     $("#hamburger").css('display','none')
     $(".swiper").css('display','none')
-    
-    
-
-
 });
 
 $(document).on('click', '#exit, .overly', function(){
     $(".overly").css('display','none')
     $("#exit").css('display','none')
-    $(".nav-items").css('display','none')
+    $(".nav-item-mobile").css('display','none')
     $("#hamburger").css('display','grid')
     $(".swiper").css('display','grid')
 
@@ -38,13 +34,13 @@ $(document).on('click', '#exit, .overly', function(){
 $(document).on('click', '.studio', function(){
     $(".product-container").css('display','grid')
     displayStudio()    
-    $(".header-main").css('display','none','important')
+    $(".header-main").fadeOut()
     $("#best-product").fadeOut()
-    $(".overly").css('display','none')
-    $("#exit").css('display','none')
-    $(".nav-items").css('display','none')
+    $(".overly").fadeOut()
+    $("#exit").fadeOut()
     $("#hamburger").css('display','grid')
     $(".inner-nav").css('display','none')
+    $(".nav-item-mobile").css('display','none')
     $(".overly").css('display','none')
     $(".footer").css('margin','0')
     new Swiper('.swiper', {
@@ -76,7 +72,7 @@ $(document).on('click', '.f2', function(){
     $("#best-product").fadeOut()
     $(".overly").css('display','none')
     $("#exit").css('display','none')
-    $(".nav-items").css('display','none')
+    $(".nav-item-mobile").css('display','none')
     $("#hamburger").css('display','grid')
     $(".inner-nav").css('display','none')
     $(".overly").css('display','none')
@@ -107,7 +103,7 @@ $(document).on('click', '.f3', function(){
     $("#best-product").fadeOut()
     $(".overly").css('display','none')
     $("#exit").css('display','none')
-    $(".nav-items").css('display','none')
+    $(".nav-item-mobile").css('display','none')
     $("#hamburger").css('display','grid')
     $(".inner-nav").css('display','none')
     $(".overly").css('display','none')
@@ -137,7 +133,7 @@ $(document).on('click', '.f4', function(){
     $("#best-product").fadeOut()
     $(".overly").css('display','none')
     $("#exit").css('display','none')
-    $(".nav-items").css('display','none')
+    $(".nav-item-mobile").css('display','none')
     $("#hamburger").css('display','grid')
     $(".inner-nav").css('display','none')
     $(".overly").css('display','none')
@@ -177,12 +173,12 @@ function displayStudio (){
             <div class="grid swiper">
         
                 <div class="swiper-wrapper">
-                   <div class="swiper-slide  "><img src="../res/product1.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product2.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product3.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product1.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product2.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product3.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product1_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product2_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product3_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product2_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product1_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product3_low.jpg" alt=""></div>
                </div>
                <div class="swiper-pagination p10 center"></div>
            
@@ -225,12 +221,12 @@ function displayF2 (){
             <div class="grid swiper">
         
                 <div class="swiper-wrapper">
-                   <div class="swiper-slide  "><img src="../res/product1.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product2.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product3.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product1.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product2.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product3.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product1_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product2_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product3_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product2_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product1_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product3_low.jpg" alt=""></div>
                </div>
                <div class="swiper-pagination p10 center"></div>
            
@@ -273,12 +269,12 @@ function displayF3 (){
             <div class="grid swiper">
         
                 <div class="swiper-wrapper">
-                   <div class="swiper-slide  "><img src="../res/product1.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product2.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product3.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product1.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product2.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product3.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product1_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product2_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product3_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product2_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product1_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product3_low.jpg" alt=""></div>
                </div>
                <div class="swiper-pagination p10 center"></div>
            
@@ -321,12 +317,12 @@ function displayF4 (){
             <div class="grid swiper">
         
                 <div class="swiper-wrapper">
-                   <div class="swiper-slide  "><img src="../res/product1.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product2.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product3.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product1.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product2.jpg" alt=""></div>
-                   <div class="swiper-slide  "><img src="../res/product3.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product1_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product2_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product3_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product2_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product1_low.jpg" alt=""></div>
+                <div class="swiper-slide  "><img src="./res/product3_low.jpg" alt=""></div>
                </div>
                <div class="swiper-pagination p10 center"></div>
            
@@ -358,32 +354,32 @@ function displayF4 (){
 // ******************************************
 // TAGS FITLERS
 var products=[
-    {"location":"Alger", "location_detail":"F2","location_dates":"14 février - 5 mars","price":"5000","tags":["1","2"],"img":"1"},
+    {"location":"Alger", "location_detail":"F2","location_dates":"14 février - 5 mars","price":"8000","tags":["1","2","7"],"img":"1"},
 
 
-    {"location":"Tipasa", "location_detail":"F3","location_dates":"14 janvier - 20 avril","price":"5000","tags":["1","2","5"], "img":"2"},
+    {"location":"Tipasa", "location_detail":"F3","location_dates":"14 janvier - 20 avril","price":"12000","tags":["1","2","5","8"], "img":"2"},
 
 
-    {"location":"Oran", "location_detail":"F4","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["1","2","3"], "img":"3"},
+    {"location":"Oran", "location_detail":"F4","location_dates":"10 juillet - 15 septembre","price":"18000","tags":["1","2","3","9"], "img":"3"},
 
 
-    {"location":"Annaba", "location_detail":"studio","location_dates":"14 février - 5 mars","price":"5000","tags":["1","2","3"], "img":"4"},
+    {"location":"Annaba", "location_detail":"studio","location_dates":"14 février - 5 mars","price":"5000","tags":["1","2","3","6"], "img":"4"},
 
 
-    {"location":"Mostaganem", "location_detail":"F4","location_dates":"14 février - 5 mars","price":"5000","tags":["1","2","4","5"], "img":"2"},
+    {"location":"Mostaganem", "location_detail":"F4","location_dates":"14 février - 5 mars","price":"18000","tags":["1","2","4","5","9"], "img":"2"},
 
 
-    {"location":"ouargla", "location_detail":"F3","location_dates":"14 janvier - 20 avril","price":"5000","tags":["4","2"], "img":"6"},
+    {"location":"Ouargla", "location_detail":"F3","location_dates":"14 janvier - 20 avril","price":"12000","tags":["4","2","8"], "img":"6"},
 
 
-    {"location":"Tamanrasset", "location_detail":"F2","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["4","2","3"], "img":"7"},
+    {"location":"Tamanrasset", "location_detail":"F2","location_dates":"10 juillet - 15 septembre","price":"8000","tags":["4","2","3","7"], "img":"7"},
 
 
-    {"location":"Illizi", "location_detail":"studio","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["1","2"], "img":"3"},
+    {"location":"Illizi", "location_detail":"studio","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["1","2","6"], "img":"3"},
 
-    {"location":"boumerdes", "location_detail":"studio","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["1","2","5"], "img":"4"},
+    {"location":"boumerdes", "location_detail":"studio","location_dates":"10 juillet - 15 septembre","price":"5000","tags":["1","2","5","6"], "img":"4"},
 
-    {"location":"Blida", "location_detail":"F2","location_dates":"14 février - 5 mars","price":"5000","tags":["1","2","3"], "img":"3"},
+    {"location":"Blida", "location_detail":"F2","location_dates":"14 février - 5 mars","price":"8000","tags":["1","2","3","7",], "img":"3"},
 ]
 
 var tags=[
@@ -392,6 +388,10 @@ var tags=[
 {"id":"3","name":"Maisons de vaccances"},
 {"id":"4","name":"Niveau de villa!"},
 {"id":"5","name":"Salle des fêtes"},
+{"id":"6","name":"Studio"},
+{"id":"7","name":"F2"},
+{"id":"8","name":"F3"},
+{"id":"9","name":"F4"},
 ] 
 
 
@@ -405,7 +405,7 @@ function display_tags (){
 
         var html=`<div class="inner-nav-items grid text-center p10 pointer" data-id="${id}">
         <span class="material-symbols-outlined text-center small-text">
-            bathtub
+        house
         </span>
         <div>${name}</div>
     </div>`
@@ -448,13 +448,13 @@ function display_products(filters){
         <div>
         <div class="grid best-product-container-box text-white center big-text pointer">
         
-        <img src="../res/${element.img}.jpg" alt="">
+        <img src="./res/${element.img}_low.jpg" alt="">
         </div>
         <div class="text-center">
             <div class=" text-black bold left pointer">${element.location}</div>
             <div class="text-gray left pointer ">${element.location_detail}  </div>
             <div class="text-gray left pointer">${element.location_dates} </div>
-            <div class="center text-black bold left pointer pt10">${element.price} par nuit</div>
+            <div class="center text-black bold left pointer pt10">${element.price} dzd par nuit</div>
         </div>
     </div>
         
