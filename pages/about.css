@@ -35,15 +35,12 @@ html, body {overflow-x: hidden; width: 100vw; height: 100vh; overflow-y: scroll;
     .nav-items{display: none; position: absolute; margin: 35%;gap: 10px!important;}
     .about-section{margin: 0}
     .about-img{
-        width: 150px;
+        width: 180px;
         height: 250px;
-    
-        background: url(../res/about_img2.jpg);
-        background-size: cover;
-        margin: 30px;
+        z-index: 400!important;
+        margin: 30px!important;
         float: right;
-        shape-margin: 10px;
-        shape-outside: url(../res/about_img2.jpg); 
+        shape-margin: 10px!important;
     }
     .footer {position:relative; bottom: 0;height: 160px; margin-top: 50px;}
     .footer-container{margin: 0; font-size: 15px; text-align: left; display: grid!important;}

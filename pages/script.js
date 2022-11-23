@@ -14,6 +14,8 @@ $(document).on('click', '#hamburger', function(){
     $("#exit").css('display','grid')
     $(".nav-items").css('display','grid')
     $("#hamburger").css('display','none')
+    $(".swiper").css('display','none')
+    
     
 
 
@@ -24,6 +26,7 @@ $(document).on('click', '#exit, .overly', function(){
     $("#exit").css('display','none')
     $(".nav-items").css('display','none')
     $("#hamburger").css('display','grid')
+    $(".swiper").css('display','grid')
 
     return false
 });
@@ -35,12 +38,15 @@ $(document).on('click', '#exit, .overly', function(){
 $(document).on('click', '.studio', function(){
     $(".product-container").css('display','grid')
     displayStudio()    
-    $(".header-main").fadeOut()
+    $(".header-main").css('display','none','important')
     $("#best-product").fadeOut()
-    $(".nav-mobile").css('display','none')
     $(".overly").css('display','none')
-    
-    $(".footer").css('height','100px')
+    $("#exit").css('display','none')
+    $(".nav-items").css('display','none')
+    $("#hamburger").css('display','grid')
+    $(".inner-nav").css('display','none')
+    $(".overly").css('display','none')
+    $(".footer").css('margin','0')
     new Swiper('.swiper', {
         // Optional parameters
         loop: true,
@@ -66,12 +72,15 @@ $(document).on('click', '.studio', function(){
 $(document).on('click', '.f2', function(){
     $(".product-container").css('display','grid')
     displayF2()
-   
-    $(".header-main").fadeOut()
+    $(".header-main").css('display','none','important')
     $("#best-product").fadeOut()
-    $(".nav-mobile").css('display','none')
     $(".overly").css('display','none')
-    $(".footer").css('height','100px')
+    $("#exit").css('display','none')
+    $(".nav-items").css('display','none')
+    $("#hamburger").css('display','grid')
+    $(".inner-nav").css('display','none')
+    $(".overly").css('display','none')
+    $(".footer").css('margin','0')
     new Swiper('.swiper', {
         // Optional parameters
         loop: true,
@@ -94,11 +103,15 @@ $(document).on('click', '.f2', function(){
 $(document).on('click', '.f3', function(){
     $(".product-container").css('display','grid')
     displayF3()
-    $(".header-main").fadeOut()
+    $(".header-main").css('display','none','important')
     $("#best-product").fadeOut()
-    $(".nav-mobile").css('display','none')
     $(".overly").css('display','none')
-    $(".footer").css('height','100px')
+    $("#exit").css('display','none')
+    $(".nav-items").css('display','none')
+    $("#hamburger").css('display','grid')
+    $(".inner-nav").css('display','none')
+    $(".overly").css('display','none')
+    $(".footer").css('margin','0')
     new Swiper('.swiper', {
         // Optional parameters
         loop: true,
@@ -120,12 +133,15 @@ $(document).on('click', '.f3', function(){
 $(document).on('click', '.f4', function(){
     $(".product-container").css('display','grid')
     displayF4()
-
-    $(".header-main").fadeOut()
+    $(".header-main").css('display','none','important')
     $("#best-product").fadeOut()
-    $(".nav-mobile").css('display','none')
     $(".overly").css('display','none')
-    $(".footer").css('height','100px')
+    $("#exit").css('display','none')
+    $(".nav-items").css('display','none')
+    $("#hamburger").css('display','grid')
+    $(".inner-nav").css('display','none')
+    $(".overly").css('display','none')
+    $(".footer").css('margin','0')
     new Swiper('.swiper', {
         // Optional parameters
         loop: true,
@@ -157,7 +173,7 @@ function displayStudio (){
             Découvrer notre cozy studio
             </div>
         </div>
-        <div class="flex space-between">
+        <div id="side-text-container" class="flex space-between">
             <div class="grid swiper">
         
                 <div class="swiper-wrapper">
@@ -183,7 +199,7 @@ function displayStudio (){
                    Prix : 5000da par nuit
                </div>
                <div class=" grid text-white p10 right"> 
-                Les frais de services sont estimé à 1%
+                Les frais de service sont estimés à 1%
             </div>
             <div class=" grid text-white p10 right"> 
                 Toutes nos réservations sont limitées
@@ -205,7 +221,7 @@ function displayF2 (){
             Découvrer notre jolie F2
             </div>
         </div>
-        <div class="flex space-between">
+        <div  id="side-text-container" class="flex space-between">
             <div class="grid swiper">
         
                 <div class="swiper-wrapper">
@@ -231,7 +247,7 @@ function displayF2 (){
                    Prix : 8000da par nuit
                </div>
                <div class=" grid text-white p10 right"> 
-                Les frais de services sont estimé à 2%
+                Les frais de service sont estimés à 2%
             </div>
             <div class=" grid text-white p10 right"> 
                 Toutes nos réservations sont limitées
@@ -253,7 +269,7 @@ function displayF3 (){
             Explorer nos spacieux F3
             </div>
         </div>
-        <div class="flex space-between">
+        <div id="side-text-container" class="flex space-between">
             <div class="grid swiper">
         
                 <div class="swiper-wrapper">
@@ -279,7 +295,7 @@ function displayF3 (){
                    Prix : 12000da par nuit
                </div>
                <div class=" grid text-white p10 right"> 
-                Les frais de services sont estimé à 3%
+                Les frais de service sont estimés à 3%
             </div>
             <div class=" grid text-white p10 right"> 
                 Toutes nos réservations sont limitées
@@ -301,7 +317,7 @@ function displayF4 (){
             Réserver l'un de nos sublime F4
             </div>
         </div>
-        <div class="flex space-between">
+        <div id="side-text-container" class="flex space-between">
             <div class="grid swiper">
         
                 <div class="swiper-wrapper">
@@ -327,7 +343,7 @@ function displayF4 (){
                    Prix : 18000da par nuit
                </div>
                <div class=" grid text-white p10 right"> 
-                Les frais de services sont estimé à 6%
+                Les frais de service sont estimés à 6%
             </div>
             <div class=" grid text-white p10 right"> 
                 Toutes nos réservations sont limitées
@@ -403,7 +419,6 @@ $(document).on('click','.inner-nav-items',function(){
     console.log(tag_id);
     var filters = {tag:tag_id}
     display_products(filters)
-    $(".header-main").css('display','none')
     var element = document.querySelector("#best-product")
     element.scrollIntoView()
 })
@@ -422,7 +437,6 @@ function display_products(filters){
                 if(tag != filters.tag) continue
                 result = 1
             }
-           
         console.log(result,element)
             if (result != 1) continue
 
